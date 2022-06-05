@@ -29,10 +29,10 @@ public abstract class AbstractBaseEntity implements Serializable {
     private LocalDateTime modifiedAt;
 
     @CreatedBy
-    private User createdBy;
+    private Long createdBy;
 
     @LastModifiedBy
-    private User lastModifiedBy;
+    private Long lastModifiedBy;
 
     public Long getId() {
         return id;
@@ -58,19 +58,19 @@ public abstract class AbstractBaseEntity implements Serializable {
         this.modifiedAt = modifiedAt;
     }
 
-    public User getCreatedBy() {
+    public Long getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(final User createdBy) {
+    public void setCreatedBy(final Long createdBy) {
         this.createdBy = createdBy;
     }
 
-    public User getLastModifiedBy() {
+    public Long getLastModifiedBy() {
         return lastModifiedBy;
     }
 
-    public void setLastModifiedBy(final User lastModifiedBy) {
+    public void setLastModifiedBy(final Long lastModifiedBy) {
         this.lastModifiedBy = lastModifiedBy;
     }
 }
