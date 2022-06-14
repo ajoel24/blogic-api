@@ -1,4 +1,4 @@
-package com.andrewjoel.blogic.models.jpa;
+package org.blogic.core.models.jpa;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;

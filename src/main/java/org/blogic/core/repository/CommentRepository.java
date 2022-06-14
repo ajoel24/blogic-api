@@ -1,6 +1,6 @@
-package com.andrewjoel.blogic.repository;
+package org.blogic.core.repository;
 
-import com.andrewjoel.blogic.models.jpa.Comment;
+import org.blogic.core.models.jpa.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

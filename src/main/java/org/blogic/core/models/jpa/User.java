@@ -1,6 +1,6 @@
-package com.andrewjoel.blogic.models.jpa;
+package org.blogic.core.models.jpa;
 
-import com.andrewjoel.blogic.models.enums.Role;
+import org.blogic.core.models.enums.Role;
 
 import javax.persistence.*;
 import java.io.Serial;

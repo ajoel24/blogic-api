@@ -1,4 +1,4 @@
-package com.andrewjoel.blogic.models.jpa;
+package org.blogic.core.models.jpa;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
