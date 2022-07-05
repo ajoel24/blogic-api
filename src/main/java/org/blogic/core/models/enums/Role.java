@@ -1,8 +1,15 @@
 package org.blogic.core.models.enums;
 
-public enum Role {
+import org.springframework.security.core.GrantedAuthority;
+
+public enum Role implements GrantedAuthority {
     ADMIN,
     AUTHOR,
     EDITOR,
-    COMMENTER
+    COMMENTER;
+
+    @Override
+    public String getAuthority() {
+        return toString();
+    }
 }

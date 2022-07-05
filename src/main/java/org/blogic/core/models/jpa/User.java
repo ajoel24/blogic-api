@@ -3,7 +3,10 @@ package org.blogic.core.models.jpa;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Set;
@@ -16,11 +19,10 @@ public class User extends AbstractBaseEntity implements Serializable {
     private static final long serialVersionUID = 4039585268498060419L;
 
     @Column(unique = true)
-    private String email;
+    private String username;
 
-    @OneToOne
-    @JoinColumn(name = "auth_id", referencedColumnName = "id")
-    private Auth auth;
+    @Column(unique = true)
+    private String email;
 
     @OneToMany(mappedBy = "user")
     private Set<Comment> comments;
